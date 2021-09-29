@@ -21,3 +21,7 @@ file_lastChangeTime(){
 	local NOW_SECONDS=`date +%s`
 	echo $(( NOW_SECONDS - LAST_ACCESS ))
 }
+
+file_lastAccessTime "$1"
+file_lastModifyTime "$1"
+file_lastChangeTime "$1"
